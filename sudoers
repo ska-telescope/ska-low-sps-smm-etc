@@ -25,3 +25,31 @@ root	ALL=(ALL:ALL) ALL
 # See sudoers(5) for more information on "#include" directives:
 
 #includedir /etc/sudoers.d
+
+ALL ALL=NOPASSWD: /bin/systemctl start pyro_server
+ALL ALL=NOPASSWD: /bin/systemctl stop pyro_server
+ALL ALL=NOPASSWD: /bin/systemctl start web_server
+ALL ALL=NOPASSWD: /bin/systemctl stop web_server
+ALL ALL=NOPASSWD: /usr/sbin/poweroff
+ALL ALL=NOPASSWD: /usr/sbin/i2cget
+ALL ALL=NOPASSWD: /usr/sbin/i2cset
+ALL ALL=NOPASSWD: /usr/sbin/fdisk
+ALL ALL=NOPASSWD: /bin/dd
+ALL ALL=NOPASSWD: /bin/mount
+ALL ALL=NOPASSWD: /bin/umount
+ALL ALL=NOPASSWD: /bin/mmc
+ALL ALL=NOPASSWD: /usr/bin/cp
+# ALL ALL=NOPASSWD: /usr/bin/echo
+ALL ALL=NOPASSWD: /usr/sbin/sfdisk
+ALL ALL=NOPASSWD: /usr/sbin/mkfs.ext4
+ALL ALL=NOPASSWD: /usr/sbin/mkfs.vfat
+ALL ALL=NOPASSWD: /home/mnguser/EMMC_CFG_SCRIPTS/update_kernel.sh
+ALL ALL=NOPASSWD: /home/mnguser/EMMC_CFG_SCRIPTS/write_fuse.sh
+ALL ALL=NOPASSWD: /home/mnguser/EMMC_CFG_SCRIPTS/write_uboot.sh
+ALL ALL=NOPASSWD: /home/mnguser/EMMC_CFG_SCRIPTS/config_emmc.sh
+ALL ALL=NOPASSWD: /home/mnguser/EMMC_CFG_SCRIPTS/write_kernel.sh
+# ALL ALL=NOPASSWD: /usr/bin/cat
+# ALL ALL=NOPASSWD: /usr/bin/tee
+ALL ALL=NOPASSWD: /usr/bin/tar
+ALL ALL=NOPASSWD: /usr/bin/git
+
