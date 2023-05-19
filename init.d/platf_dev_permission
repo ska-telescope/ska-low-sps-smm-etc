@@ -1,0 +1,41 @@
+#! /bin/sh
+# /etc/init.d/platf_dev_permission: Set platform devices permission to 0666
+#
+# written by Cristian Albanese cristian.albanese@sanitaseg.it
+
+### BEGIN INIT INFO
+# Provides:          platf_dev_permission
+# Required-Start:    
+# Required-Stop:
+# Should-Start:      
+# X-Start-Before:    
+# Default-Start:     S
+# Default-Stop:
+# Short-Description:  Set platform devices permission to 0666
+# Description:   Set platform devices permission to 0666
+### END INIT INFO
+
+search_dir=/sys/bus/platform/devices/
+for entry in "$search_dir"/80*
+do
+  echo "$entry"
+  echo "\n"
+  for device in "$entry"/parameters/*
+    do
+	echo "$device"
+	chmod 0666 "$device"
+   done
+done
+chmod 0666 /dev/ttymxc0
+chmod 0666 /sys/class/gpio/export
+chmod 0666 /sys/class/gpio/unexport
+usermod -a -G gpio mnguser
+
+
+chown root:production /sys/fsl_otp/HW_OCOTP_CFG4
+chown root:production /sys/fsl_otp/HW_OCOTP_CFG5
+chown root:production /sys/block/mmcblk0boot0/force_ro
+chmod 0660 /sys/fsl_otp/HW_OCOTP_CFG4
+chmod 0660 /sys/fsl_otp/HW_OCOTP_CFG5
+chmod 0660 /sys/block/mmcblk0boot0/force_ro
+
