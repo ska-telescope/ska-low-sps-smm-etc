@@ -48,3 +48,4 @@ crontab:x:108:
 netdev:x:109:
 systemd-coredump:x:999:
 ssh:x:110:
+messagebus:x:111:
