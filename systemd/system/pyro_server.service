@@ -1,0 +1,16 @@
+[Unit]
+Description=Pyro Server service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /etc/smb-tools/pyro_server_start.sh
+ExecStop=/bin/bash /etc/smb-tools/pyro_server_stop.sh
+Restart=always
+RestartSec=5
+TimeoutSec=60
+RuntimeMaxSec=infinity
+PIDFile=/tmp/name_script.pid
+
+[Install]
+WantedBy=multi-user.target

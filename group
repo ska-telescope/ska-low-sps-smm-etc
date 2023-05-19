@@ -3,7 +3,7 @@ daemon:x:1:
 bin:x:2:
 sys:x:3:
 adm:x:4:
-tty:x:5:
+tty:x:5:mnguser
 disk:x:6:
 lp:x:7:
 mail:x:8:
@@ -12,13 +12,13 @@ uucp:x:10:
 man:x:12:
 proxy:x:13:
 kmem:x:15:
-dialout:x:20:
+dialout:x:20:mnguser
 fax:x:21:
 voice:x:22:
 cdrom:x:24:
 floppy:x:25:
 tape:x:26:
-sudo:x:27:
+sudo:x:27:mnguser
 audio:x:29:
 dip:x:30:
 www-data:x:33:
@@ -35,7 +35,7 @@ sasl:x:45:
 plugdev:x:46:
 staff:x:50:
 games:x:60:
-users:x:100:
+users:x:100:mnguser
 nogroup:x:65534:
 systemd-journal:x:101:
 systemd-timesync:x:102:
@@ -50,3 +50,5 @@ systemd-coredump:x:999:
 ssh:x:110:
 messagebus:x:111:
 mnguser:x:1000:
+gpio:x:1001:mnguser
+production:x:1002:mnguser

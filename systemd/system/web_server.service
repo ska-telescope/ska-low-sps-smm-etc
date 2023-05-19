@@ -1,0 +1,18 @@
+[Unit]
+Description=Web Server service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /etc/smb-tools/web_server_start.sh
+ExecStop=/bin/bash /etc/smb-tools/web_server_stop.sh
+Restart=always
+RestartSec=5
+TimeoutSec=60
+RuntimeMaxSec=infinity
+PIDFile=/tmp/name_script.pid
+After=rc-local.service
+Requires=rc-local.service
+
+[Install]
+WantedBy=multi-user.target
