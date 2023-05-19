@@ -6,5 +6,5 @@ source-directory /etc/network/interfaces.d
 auto eth0
 allow-hotplug eth0
 iface eth0 inet static
-	address 10.0.10.32
+	address 10.0.10.80
 	netmask 255.255.255.0
