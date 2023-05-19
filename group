@@ -52,3 +52,4 @@ messagebus:x:111:
 mnguser:x:1000:
 gpio:x:1001:mnguser
 production:x:1002:mnguser
+i2c:x:112:
