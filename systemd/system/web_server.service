@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /etc/smb-tools/web_server_start.sh
-ExecStop=/bin/bash /etc/smb-tools/web_server_stop.sh
+ExecStart=/bin/bash /etc/ska-low-smm-tools/web_server_start.sh
+ExecStop=/bin/bash /etc/ska-low-smm-tools/web_server_stop.sh
 Restart=always
 RestartSec=5
 TimeoutSec=60
