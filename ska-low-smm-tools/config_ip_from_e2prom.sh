@@ -43,7 +43,7 @@ echo "	netmask $netmask" | tee -a $conf
 
 sleep 1
 systemctl restart networking
-ip route add default gw $gateway via eth0
+ip route add default via $gateway dev eth0
 echo nameserver 8.8.8.8 | tee /etc/resolv.conf 
 echo nameserver 8.8.4.4 | tee -a /etc/resolv.conf 
 
