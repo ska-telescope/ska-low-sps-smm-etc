@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="gpio", RUN+="/bin/sh -c 'chgrp -R gpio /sys/class/gpio/gpio*/ && chmod -R g+w /sys/class/gpio/gpio*/'"
