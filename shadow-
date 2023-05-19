@@ -1,4 +1,4 @@
-root::19496:0:99999:7:::
+root:$6$M1K090.v1WlCWc0o$Tg6gsRYvKPOU42TZgODxcANHmyyXmb4qAwFu3OtlfTk8f/rK90OgATA5kUErfU0HVhVS0u5wSOblzmYk1V3Dg0:19496:0:99999:7:::
 daemon:*:19496:0:99999:7:::
 bin:*:19496:0:99999:7:::
 sys:*:19496:0:99999:7:::
