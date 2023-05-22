@@ -117,4 +117,4 @@ cd ~/SubrackMngAPI
 echo ""
 cat /tmp/board_info
 
-# WARNING!!! This file will be overwritten at boot by rc.local
+# WARNING!!! This file will be overwritten at boot by hw_init.service

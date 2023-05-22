@@ -32,7 +32,7 @@ echo -e "gateway: " $gateway
 conf="/etc/network/interfaces"
 echo "# interfaces(5) file used by ifup(8) and ifdown(8)" | tee $conf
 echo "# Include files from /etc/network/interfaces.d:" | tee -a $conf
-echo "# WARNING!!! This file will be overwritten at boot by rc.local" | tee -a $conf
+echo "# WARNING!!! This file will be overwritten at boot by hw_init.service" | tee -a $conf
 echo "source-directory /etc/network/interfaces.d" | tee -a $conf
 echo "" | tee -a $conf
 echo "auto eth0" | tee -a $conf
