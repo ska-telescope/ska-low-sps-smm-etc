@@ -1,6 +1,6 @@
 [Unit]
 Description=Web Server service
-After=network.target
+Requires=rc-local.service
 
 [Service]
 Type=simple
@@ -11,8 +11,6 @@ RestartSec=5
 TimeoutSec=60
 RuntimeMaxSec=infinity
 PIDFile=/tmp/name_script.pid
-After=rc-local.service
-Requires=rc-local.service
 
 [Install]
 WantedBy=multi-user.target
