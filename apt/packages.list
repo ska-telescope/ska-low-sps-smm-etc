@@ -100,7 +100,6 @@ libbz2-1.0/oldstable,now 1.0.6-9.2~deb10u1 armhf
 libbz2-dev/oldstable,now 1.0.6-9.2~deb10u1 armhf 
 libc-bin/oldstable,now 2.28-10+deb10u1 armhf 
 libc-dev-bin/oldstable,now 2.28-10+deb10u1 armhf 
-libc-l10n/oldstable,now 2.28-10+deb10u1 all 
 libc6-dev/oldstable,now 2.28-10+deb10u1 armhf 
 libc6/oldstable,now 2.28-10+deb10u1 armhf 
 libcap-ng0/oldstable,now 0.7.9-2 armhf 
@@ -254,7 +253,6 @@ libxtables12/oldstable,now 1.8.2-4 armhf
 libzstd1/oldstable,now 1.3.8+dfsg-3+deb10u2 armhf 
 linux-libc-dev/oldstable,now 4.19.249-2 armhf 
 lm-sensors/oldstable,now 1:3.5.0-3 armhf 
-locales/oldstable,now 2.28-10+deb10u1 all 
 login/oldstable,now 1:4.5-1.1 armhf 
 logrotate/oldstable,now 3.14.0-4 armhf 
 lsb-base/oldstable,now 10.2019051400 all 

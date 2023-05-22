@@ -1,6 +1,7 @@
 [Unit]
 Description=Web Server service
-Requires=rc-local.service
+After=network.target hw_init.service
+Requires=hw_init.service
 
 [Service]
 Type=simple

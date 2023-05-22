@@ -1,9 +1,10 @@
 [Unit]
 Description=Hardware initialization
+After=networking.service
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash /etc/rc_local
+ExecStart=/bin/bash /etc/ska-low-smm-tools/hw_init.sh
 RemainAfterExit=yes
 
 [Install]
