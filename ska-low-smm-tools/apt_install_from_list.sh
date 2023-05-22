@@ -8,8 +8,7 @@ while read line; do
 	if [ "$n" -gt 1 ]; then
 		package=`echo $line | cut -d/ -f1`
 		version=`echo $line | cut -d\  -f2`
-		# list_packages="$list_packages $package=$version"
-		list_packages="$list_packages $package"
+		list_packages="$list_packages $package=$version"
 	fi
 	n=$((n+1))
 done < $filename
