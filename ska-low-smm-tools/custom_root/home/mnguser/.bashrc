@@ -114,3 +114,7 @@ fi
 
 source ~/SubrackMngAPI/venv/bin/activate
 cd ~/SubrackMngAPI
+echo ""
+cat /tmp/board_info
+
+# WARNING!!! This file will be overwritten at boot by rc.local
