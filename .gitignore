@@ -54,3 +54,4 @@ DEADJOE
 # end section managed by etckeeper
 
 network/interfaces
+ssh/ssh_host_*
