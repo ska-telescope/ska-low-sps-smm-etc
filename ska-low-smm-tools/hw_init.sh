@@ -17,7 +17,7 @@ pushd /etc/ska-low-smm-tools/custom_root
 cp -rpv . / 2>&1 | tee -a $log
 popd
 
-if [ ! -f "/etc/ska-low-smm-tools/hw_init_pll_source_internal" ]; then
+if [ -f "/etc/ska-low-smm-tools/hw_init_pll_source_internal" ]; then
 	echo " = Running subrack_management_board --init --pll_source_internal" 2>&1 | tee -a $log
 	/home/mnguser/SubrackMngAPI/venv/bin/python /home/mnguser/SubrackMngAPI/subrack_mng_api/subrack_management_board.py --init --pll_source_internal 2>&1 | tee -a $log
 else
