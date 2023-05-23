@@ -55,3 +55,4 @@ DEADJOE
 
 network/interfaces
 ssh/ssh_host_*
+ska-low-smm-tools/hw_init_cfg*
