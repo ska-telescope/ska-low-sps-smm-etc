@@ -15,6 +15,7 @@ apt list --installed | cut -d[ -f1 > /etc/apt/packages.list | tee -a $log
 echo " = Running custom_root restore" 2>&1 | tee -a $log
 pushd /etc/ska-low-smm-tools/custom_root
 cp -rpv . / 2>&1 | tee -a $log
+chown -R mnguser:mnguser /home/mnguser
 popd
 
 if [ -f "/etc/ska-low-smm-tools/hw_init_pll_source_internal" ]; then
