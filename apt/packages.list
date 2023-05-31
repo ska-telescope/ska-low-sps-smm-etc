@@ -194,6 +194,7 @@ libpam-modules/oldstable,now 1.3.1-5 armhf
 libpam-runtime/oldstable,now 1.3.1-5 all 
 libpam-systemd/oldstable,now 241-7~deb10u8 armhf 
 libpam0g/oldstable,now 1.3.1-5 armhf 
+libpcap0.8/oldstable,now 1.8.1-6+deb10u1 armhf 
 libpcre2-8-0/oldstable,now 10.32-5 armhf 
 libpcre3/oldstable,now 2:8.39-12 armhf 
 libperl5.28/oldstable,now 5.28.1-6+deb10u1 armhf 
@@ -295,6 +296,7 @@ python/oldstable,now 2.7.16-1 armhf
 read-edid/oldstable,now 3.0.2-1+b1 armhf 
 readline-common/oldstable,now 7.0-5 all 
 rng-tools-debian/oldstable,now 2-unofficial-mt.14-3 armhf 
+rsync/oldstable,now 3.1.3-6 armhf 
 rsyslog/oldstable,now 8.1901.0-1+deb10u2 armhf 
 sed/oldstable,now 4.7-1 armhf 
 sensible-utils/oldstable,now 0.0.12 all 
@@ -308,6 +310,7 @@ sysvinit-utils/oldstable,now 2.93-8 armhf
 tar/oldstable,now 1.30+dfsg-6 armhf 
 tasksel-data/oldstable,now 3.53 all 
 tasksel/oldstable,now 3.53 all 
+tcpdump/oldstable,now 4.9.3-1~deb10u2 armhf 
 tzdata/oldstable,now 2021a-0+deb10u6 all 
 ucf/oldstable,now 3.0038+nmu1 all 
 udev/oldstable,now 241-7~deb10u8 armhf 
