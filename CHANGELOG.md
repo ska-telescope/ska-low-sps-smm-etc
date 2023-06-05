@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.8.0 (2023-06-05)
+
+### Features
+ - update script `ska-low-smm-tools/update_os.sh`
+ - installed rsync and tcpdump for debug
+
+### Bug Fixes
+ - mnguser's home ownership
+
 ## v0.7.0 (2023-05-24)
 
 ### Features
