@@ -52,4 +52,4 @@ ALL ALL=NOPASSWD: /home/mnguser/EMMC_CFG_SCRIPTS/write_kernel.sh
 # ALL ALL=NOPASSWD: /usr/bin/tee
 ALL ALL=NOPASSWD: /usr/bin/tar
 ALL ALL=NOPASSWD: /usr/bin/git
-
+ALL ALL=NOPASSWD: /usr/sbin/memtester
