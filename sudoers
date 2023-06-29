@@ -28,8 +28,14 @@ root	ALL=(ALL:ALL) ALL
 
 ALL ALL=NOPASSWD: /bin/systemctl start pyro_server
 ALL ALL=NOPASSWD: /bin/systemctl stop pyro_server
+ALL ALL=NOPASSWD: /bin/systemctl enable pyro_server
+ALL ALL=NOPASSWD: /bin/systemctl disable pyro_server
 ALL ALL=NOPASSWD: /bin/systemctl start web_server
 ALL ALL=NOPASSWD: /bin/systemctl stop web_server
+ALL ALL=NOPASSWD: /bin/systemctl enable web_server
+ALL ALL=NOPASSWD: /bin/systemctl disable web_server
+ALL ALL=NOPASSWD: /bin/systemctl enable hw_init
+ALL ALL=NOPASSWD: /bin/systemctl disable hw_init
 ALL ALL=NOPASSWD: /usr/sbin/poweroff
 ALL ALL=NOPASSWD: /usr/sbin/i2cget
 ALL ALL=NOPASSWD: /usr/sbin/i2cset
