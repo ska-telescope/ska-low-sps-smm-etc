@@ -60,3 +60,4 @@ ALL ALL=NOPASSWD: /usr/bin/tar
 ALL ALL=NOPASSWD: /usr/bin/git
 ALL ALL=NOPASSWD: /usr/sbin/memtester
 ALL ALL=NOPASSWD: /usr/sbin/arp
+ALL ALL=NOPASSWD: /etc/ska-low-smm-tools/update_os.sh
