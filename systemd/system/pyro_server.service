@@ -1,6 +1,7 @@
 [Unit]
 Description=Pyro Server service
-After=network.target
+After=network.target hw_init.service
+Requires=hw_init.service
 
 [Service]
 Type=simple
