@@ -287,6 +287,7 @@ pinentry-curses/oldstable,now 1.1.0-2 armhf
 pkg-config/oldstable,now 0.29-6 armhf 
 procps/oldstable,now 2:3.3.15-2 armhf 
 publicsuffix/oldstable,now 20220811.1734-0+deb10u1 all 
+pv/oldstable,now 1.6.6-1 armhf 
 python-minimal/oldstable,now 2.7.16-1 armhf 
 python2-minimal/oldstable,now 2.7.16-1 armhf 
 python2.7-minimal/oldstable,now 2.7.16-2+deb10u1 armhf 
