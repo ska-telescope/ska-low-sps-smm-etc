@@ -26,10 +26,12 @@ root	ALL=(ALL:ALL) ALL
 
 #includedir /etc/sudoers.d
 
+ALL ALL=NOPASSWD: /bin/systemctl restart pyro_server
 ALL ALL=NOPASSWD: /bin/systemctl start pyro_server
 ALL ALL=NOPASSWD: /bin/systemctl stop pyro_server
 ALL ALL=NOPASSWD: /bin/systemctl enable pyro_server
 ALL ALL=NOPASSWD: /bin/systemctl disable pyro_server
+ALL ALL=NOPASSWD: /bin/systemctl restart web_server
 ALL ALL=NOPASSWD: /bin/systemctl start web_server
 ALL ALL=NOPASSWD: /bin/systemctl stop web_server
 ALL ALL=NOPASSWD: /bin/systemctl enable web_server
