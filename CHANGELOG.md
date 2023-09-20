@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.10.0 (2023-09-20)
+
+### Features
+ - installed pv to support SubrackMngAPI deploy.py improved output
+ - sudores update
+
+## v0.9.0 (2023-07-13)
+
+### Features
+ - Heartbeat led (LED3) turns from red to green when web_server running
+ - sudores update
+
 ## v0.8.0 (2023-06-05)
 
 ### Features
