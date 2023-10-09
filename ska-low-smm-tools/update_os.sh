@@ -37,8 +37,8 @@ if [ $PRINT_HELP == true ]; then
 fi
 
 echo "Updating repository with online version"
-git -C $ROOT pull || { echo 'cmd failed' ; exit 1; }
 git -C $ROOT checkout $BRANCH || { echo 'cmd failed' ; exit 1; }
+git -C $ROOT pull || { echo 'cmd failed' ; exit 1; }
 
 
 echo "Install configured version of packages"
