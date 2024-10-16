@@ -45,7 +45,7 @@ echo "Install configured version of packages"
 /etc/ska-low-smm-tools/apt_install_from_list.sh /etc/apt/packages.list
 
 echo "Restore /etc/ssl/certs from archive"
-tar -xvzf /etc/ssl/certs.tgz -C /etc/ssl
+tar -xvzf /etc/ssl/certs.tgz -C /etc
 
 echo ""
 echo "System reboot required to apply changes"
